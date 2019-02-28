@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aboubakr.beastmainbroject">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".infrastructure.BeastApplication">
+        <!--i changed the name of the app to BeastApplication to use the BeastApplication class child class -->
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.PracticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogActivity"/>
+        <activity
+            android:name=".activities.BrotherPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogActivity"
+            />
+        <activity
+            android:name=".activities.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogActivity"
+            />
+        <activity
+            android:name=".activities.YoutubeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/YouTubeDialog"
+            />
+        <activity android:name=".activities.MapsActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.CampusMapActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAR3nfdn3N-o5svoLcucOC2l6qWZ1VT1dI"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Beast Main Project</string>
+    <string name="fragment_title_meet_a_bro">Meet a Bro</string>
+    <string name="fragment_title_rush">Rush</string>
+    <string name="fragment_title_about_us">About Us</string>
+    <string name="whyJoinedHeader">Why I Joined</string>
+    <string name="major_intro">Major: %1$s</string>
+    <string name="fun_fact_intro">Fun Fact: %1$s</string>
+    <string name="crossed_semester_intro">Joined: %1$s</string>
+    <string name="about_us_header_intro_heading">Introduction</string>
+    <string name="about_us_header_intro_body">This app was created by Jarrod and he certainly fucks. Oh yes he do.</string>
+    <string name="about_us_list_header_comm_service">Community Service Events</string>
+    <string name="about_us_list_header_fraternity">Brotherhood Events</string>
+    <string name="about_us_list_header_social">Social Events</string>
+    <string name="rush_footer_follow_us">FOLLOW US ON SOCIAL MEDIA</string>
+    <string name="rush_intro">What is Rush?</string>
+    <string name="rush_explainer">Rush is recruitment</string>
+    <string name="rush_events">Rush Events</string>
+    <string name="intro_header">Introduction</string>
+    <string name="intro_body">This app was made by Aboubakr Gamal as training, following a course in android development</string>
+</resources>

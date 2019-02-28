@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44000000">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/fragment_brother_detail_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ProgressBar
+            android:id="@+id/fragment_brother_detail_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="major"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_crossSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="semester"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_funFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fun fact"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_whyJoinedHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whyJoinedHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fragment_brother_detail_whyJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="joined for reason"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+</LinearLayout>
