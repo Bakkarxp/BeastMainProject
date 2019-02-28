@@ -17,6 +17,7 @@ public class BeastApplication extends Application {
 
     public static final String YOUTUBE_API_KEY = "AIzaSyBz12uwuba1wFNBW8zaDz9bgrTaLVwmiOc";
 
+    // Firbase Urls
     public static final String FIREBASE_BROTHERS_REFERENCE = "https://beastmainproject-231722.firebaseio.com/data/brother";
     public static final String FIREBASE_EVENT_CARDS_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/eventCards/community";
     public static final String FIREBASE_EVENT_CARDS_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventCards/brotherhood";
