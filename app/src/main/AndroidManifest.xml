@@ -12,7 +12,7 @@
         android:name=".infrastructure.BeastApplication">
         <!--i changed the name of the app to BeastApplication to use the BeastApplication class child class -->
 
-        <activity android:name=".activities.MainActivity"
+        <activity android:name=".activities.PracticeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PracticeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/CustomDialogActivity"/>
+        <!--<activity android:name=".activities.PracticeActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/CustomDialogActivity"/>-->
         <activity
             android:name=".activities.BrotherPagerActivity"
             android:screenOrientation="portrait"

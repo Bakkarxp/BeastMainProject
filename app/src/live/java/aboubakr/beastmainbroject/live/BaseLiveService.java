@@ -8,13 +8,15 @@ import com.squareup.otto.Bus;
 public class BaseLiveService {
     protected final BeastApplication application;
     protected final Bus bus;
-    protected final DatabaseReference databaseReference ;
+    protected final DatabaseReference firbaseDatabaseReference;
+
+    // Url for  firebase database
     public static final String FIREBASE_REFERENCE="https://beastmainproject-231722.firebaseio.com/";
 
     public BaseLiveService(BeastApplication application) {
         this.application = application;
         bus = application.getBus();
         bus.register(this);
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        firbaseDatabaseReference = FirebaseDatabase.getInstance().getReference();
     }
 }

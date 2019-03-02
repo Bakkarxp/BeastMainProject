@@ -48,16 +48,9 @@ public class AboutUsFragment extends BaseFragment implements AboutUsAdapter.Abou
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         setUpAdapter();
 
-        bus.post(new EventCardService.SearchCommunityServiceCardRequest("Hello"));
-        bus.post(new EventCardService.SearchBrotherHoodCardRequest("Hello"));
-        bus.post(new EventCardService.SearchSocialCardRequest("Hello"));
-
-//        bus.post(new EventCardService.SearchCommunityServiceCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_COMMUNITY));
-//        bus.post(new EventCardService.SearchBrotherHoodCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_BROTHERHOOD));
-//        bus.post(new EventCardService.SearchSocialCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_SOCIAL));
-
-
-
+        bus.post(new EventCardService.SearchCommunityServiceCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_COMMUNITY));
+        bus.post(new EventCardService.SearchBrotherHoodCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_BROTHERHOOD));
+        bus.post(new EventCardService.SearchSocialCardRequest(BeastApplication.FIREBASE_EVENT_CARDS_SOCIAL));
 
         return  rootView;
     }

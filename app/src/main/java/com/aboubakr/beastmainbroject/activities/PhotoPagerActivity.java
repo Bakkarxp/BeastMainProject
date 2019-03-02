@@ -40,14 +40,14 @@ public class PhotoPagerActivity extends  BaseActivity {
     public void getCommunityPictures(EventPhotoServices.SearchCommunityPhotoResponse response) {
         eventPictures.clear();
         eventPictures.addAll(response.communityPhotos);
-//        viewPager.getAdapter().notifyDataSetChanged();
+        viewPager.getAdapter().notifyDataSetChanged();
     }
 
     @Subscribe
     public void getBrotherhoodPictures(EventPhotoServices.SearchBrotherHoodPhotoResponse response) {
         eventPictures.clear();
         eventPictures.addAll(response.brotherHoodPhotos);
-//        viewPager.getAdapter().notifyDataSetChanged();
+        viewPager.getAdapter().notifyDataSetChanged();
     }
 
 
@@ -55,7 +55,7 @@ public class PhotoPagerActivity extends  BaseActivity {
     public void getSocialPictures(EventPhotoServices.SearchSocialPhotoResponse response) {
         eventPictures.clear();
         eventPictures.addAll(response.socialPhotos);
-//        viewPager.getAdapter().notifyDataSetChanged();
+        viewPager.getAdapter().notifyDataSetChanged();
     }
 
 

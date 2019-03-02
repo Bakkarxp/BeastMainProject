@@ -47,7 +47,7 @@ public class MeetABroFragment extends BaseFragment implements MeetABroAdapter.On
         setUpAdapter();
         //getBrothers(brothers);
         // posting event with BrotherSearchRequest object
-        bus.post(new BrotherServices.BrotherSearchRequest("Firebase Url"));
+        bus.post(new BrotherServices.BrotherSearchRequest(BeastApplication.FIREBASE_BROTHERS_REFERENCE));
         return rootView;
     }
 
@@ -74,7 +74,17 @@ public class MeetABroFragment extends BaseFragment implements MeetABroAdapter.On
     @Subscribe
     public void getBrothers(BrotherServices.BrotherSearchResponse response) {
         // add elements to the brothers array inside MeetABroAdapter class
-        brothers.clear();
-        brothers.addAll(response.brothers);
+//        int oldSize = brothers.size();
+//        brothers.clear();
+//        adapter.notifyItemRangeRemoved(0, oldSize);
+//        brothers.addAll(response.brothers);
+//        adapter.notifyItemRangeChanged(0,brothers.size());
+        int oldSize = brothers.size();
+        if (oldSize == 0) {
+            brothers.clear();
+            adapter.notifyItemRangeRemoved(0, oldSize);
+            brothers.addAll(response.brothers);
+            adapter.notifyItemChanged(0, brothers.size());
+        }
     }
 }

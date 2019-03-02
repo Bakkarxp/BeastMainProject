@@ -20,11 +20,11 @@ public class BeastApplication extends Application {
     // Firbase Urls
     public static final String FIREBASE_BROTHERS_REFERENCE = "https://beastmainproject-231722.firebaseio.com/data/brother";
     public static final String FIREBASE_EVENT_CARDS_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/eventCards/community";
-    public static final String FIREBASE_EVENT_CARDS_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventCards/brotherhood";
-    public static final String FIREBASE_EVENT_CARDS_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/eventCards/social";
-    public static final String FIREBASE_EVENT_PICTURES_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/eventPictures/community";
-    public static final String FIREBASE_EVENT_PICTURES_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventPictures/brotherhood";
-    public static final String FIREBASE_EVENT_PICTURES_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/eventPictures/social";
+    public static final String FIREBASE_EVENT_CARDS_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventCards/brotherHood";
+    public static final String FIREBASE_EVENT_CARDS_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/eventCards/socials";
+    public static final String FIREBASE_EVENT_PICTURES_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/eventPics/community";
+    public static final String FIREBASE_EVENT_PICTURES_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventPics/brotherHood";
+    public static final String FIREBASE_EVENT_PICTURES_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/eventPics/socials";
     public static final String FIREBASE_RUSH_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/rushEvents/community";
     public static final String FIREBASE_RUSH_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/rushEvents/social";
 

@@ -3,12 +3,12 @@ package com.aboubakr.beastmainbroject.entities.firebaseEntities;
 
 
 public class EventPictureFirebase {
-    private String image;
+    private String url;
 
     public EventPictureFirebase() {
     }
 
-    public String getImage() {
-        return image;
+    public String getUrl() {
+        return url;
     }
 }

@@ -24,7 +24,7 @@ public class BrotherPagerActivity extends BaseActivity{
     private ArrayList<Brother> brothers;
 
     @BindView(R.id.activity_brother_pager_viewpager)
-    ViewPager viewPager;
+    ViewPager brotherViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,8 @@ public class BrotherPagerActivity extends BaseActivity{
 
         ButterKnife.bind(this);
         brothers = new ArrayList<>();
-        bus.post(new BrotherServices.BrotherSearchRequest("Firebase Url"));
-        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+        bus.post(new BrotherServices.BrotherSearchRequest(BeastApplication.FIREBASE_BROTHERS_REFERENCE));
+        brotherViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
                 Brother brother = brothers.get(position);
@@ -53,12 +53,13 @@ public class BrotherPagerActivity extends BaseActivity{
     public void getBrothers(BrotherServices.BrotherSearchResponse response) {
         brothers.clear();
         brothers.addAll(response.brothers);
+        brotherViewPager.getAdapter().notifyDataSetChanged();
 
         Brother brother = getIntent().getParcelableExtra(BROTHER_EXTRA_INFO);
         int brotherId = brother.getBrotherId();
         for (int i = 0; i < brothers.size(); i++) {
             if (brothers.get(i).getBrotherId() == brotherId) {
-                viewPager.setCurrentItem(i);
+                brotherViewPager.setCurrentItem(i);
                 break;
             }
         }
