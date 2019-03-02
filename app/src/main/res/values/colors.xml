@@ -6,4 +6,6 @@
     <color name="colorBackground">#949494</color>
     <color name="colorBackgroundClicked">#FF8F00</color>
     <color name="colorCardBackground">#CD00C7B7</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>

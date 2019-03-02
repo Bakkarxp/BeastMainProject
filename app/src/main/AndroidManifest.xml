@@ -12,14 +12,19 @@
         android:name=".infrastructure.BeastApplication">
         <!--i changed the name of the app to BeastApplication to use the BeastApplication class child class -->
 
-        <activity android:name=".activities.MainActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
         <!--<activity android:name=".activities.PracticeActivity"-->
             <!--android:screenOrientation="portrait"-->
             <!--android:theme="@style/CustomDialogActivity"/>-->
@@ -40,11 +45,13 @@
             />
         <activity android:name=".activities.MapsActivity"
             android:parentActivityName=".activities.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <activity android:name=".activities.CampusMapActivity"
             android:parentActivityName=".activities.MainActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             />
 
         <meta-data android:name="com.google.android.geo.API_KEY"
