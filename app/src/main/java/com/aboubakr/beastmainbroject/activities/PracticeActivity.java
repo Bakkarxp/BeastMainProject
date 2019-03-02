@@ -13,6 +13,7 @@ import com.aboubakr.beastmainbroject.entities.Brother;
 import com.aboubakr.beastmainbroject.fragments.AboutUsFragment;
 import com.aboubakr.beastmainbroject.fragments.BrotherDetailFragment;
 import com.aboubakr.beastmainbroject.fragments.MeetABroFragment;
+import com.aboubakr.beastmainbroject.fragments.RushFragment;
 
 public class PracticeActivity extends BaseActivity {
     public static final String BROTHER_EXTRA_INFO = "BROTHER_EXTRA_INFO";
@@ -26,7 +27,7 @@ public class PracticeActivity extends BaseActivity {
         Fragment fragment = fragmentManager.findFragmentById(R.id.activity_practice_fragment_container);
 
         if(fragment == null){
-           fragment = new AboutUsFragment();
+           fragment = new RushFragment();
            fragmentManager.beginTransaction()
                    .add(R.id.activity_practice_fragment_container,fragment)
                    .commit();

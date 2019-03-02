@@ -1,8 +1,12 @@
 package com.aboubakr.beastmainbroject.entities.firebaseEntities;
 
 public class RushFirebase {
-    private String name, date, time, location;
-    private double latitude, longitude;
+    private String name;
+    private String date;
+    private String time;
+    private String location;
+    private double latitude;
+    private double longitude;
     private boolean campus;
     private String description;
 

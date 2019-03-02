@@ -12,7 +12,7 @@
         android:name=".infrastructure.BeastApplication">
         <!--i changed the name of the app to BeastApplication to use the BeastApplication class child class -->
 
-        <activity android:name=".activities.PracticeActivity"
+        <activity android:name=".activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

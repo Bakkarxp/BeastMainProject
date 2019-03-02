@@ -26,7 +26,7 @@ public class BeastApplication extends Application {
     public static final String FIREBASE_EVENT_PICTURES_BROTHERHOOD = "https://beastmainproject-231722.firebaseio.com/data/eventPics/brotherHood";
     public static final String FIREBASE_EVENT_PICTURES_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/eventPics/socials";
     public static final String FIREBASE_RUSH_COMMUNITY = "https://beastmainproject-231722.firebaseio.com/data/rushEvents/community";
-    public static final String FIREBASE_RUSH_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/rushEvents/social";
+    public static final String FIREBASE_RUSH_SOCIAL = "https://beastmainproject-231722.firebaseio.com/data/rushEvents/socials";
 
 
 
